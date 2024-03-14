@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
 
 void plus_moins(int choix_joueur, int valeur_a_trouver) {
 	
@@ -9,7 +12,9 @@ void plus_moins(int choix_joueur, int valeur_a_trouver) {
 }
 
 int main() {
-	int valeur_a_trouver = 769;
+	srand (time (0));
+	
+	int valeur_a_trouver = rand() % 100;
 	int choix_joueur;
 	scanf("%i", &choix_joueur);
 	
